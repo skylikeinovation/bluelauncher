@@ -1,7 +1,7 @@
-            - name: tauri-build
+            - name: tauri-build-action
   # You may pin to the exact commit or the version.
-  # uses: JonasKruckenberg/tauri-build@406f9292d464c04add8c74e8ed1ed4105b91a20e
-  uses: JonasKruckenberg/tauri-build@v1.0.3
+  # uses: zoy-l/tauri-build-action@9d54266a56179f066f292567a6186e3925f4925c
+  uses: zoy-l/tauri-build-action@v1.0.2
   with:
     # Binary to use to build the application
     runner: # optional
