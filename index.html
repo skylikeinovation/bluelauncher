@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueLauncher - Real Scanner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="text-center mb-10">
+        <h1 id="clock" class="text-7xl font-light tracking-tighter mb-4">00:00</h1>
+        <div id="status" class="status-badge">A verificar ambiente...</div>
+        <div id="path-display" class="path-info">A detetar pasta do utilizador...</div>
+    </header>
+
+    <main id="game-grid" class="game-grid">
+        <!-- Jogos detetados via Tauri aparecerão aqui -->
+    </main>
+
+    <div id="no-games" class="hidden text-gray-500 italic">
+        Nenhum ficheiro .game encontrado.
+    </div>
+</body>
+</html>

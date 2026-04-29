@@ -1,0 +1,83 @@
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+        :root {
+            --blue-deep: #0a192f;
+            --blue-accent: #64ffda;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at center, #0a192f 0%, #020c1b 100%);
+            color: #e6f1ff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            overflow-x: hidden;
+            user-select: none;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1000px;
+            padding: 2rem;
+        }
+
+        .game-card {
+            background: var(--glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 2.5rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2.5rem;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05) translateY(-5px);
+            border-color: var(--blue-accent);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 20px 40px -15px rgba(100, 255, 218, 0.2);
+        }
+
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2rem;
+            background: linear-gradient(135deg, #112240, #1d2d50);
+            margin-bottom: 1.5rem;
+        }
+
+        .status-badge {
+            background: rgba(100, 255, 218, 0.1);
+            color: var(--blue-accent);
+            padding: 6px 16px;
+            border-radius: 99px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .path-info {
+            font-family: monospace;
+            font-size: 12px;
+            color: #64ffda;
+            opacity: 0.5;
+            margin-top: 10px;
+        }
